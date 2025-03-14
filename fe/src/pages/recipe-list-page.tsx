@@ -8,13 +8,15 @@ export const RecipeListPage = () => {
   const [searchParams] = useSearchParams();
 
   const searchValue = searchParams.get("s") ?? "";
+  const filterParam = searchParams.get("f") ?? "";
+  const filterValue = searchParams.get("fv") ?? "";
 
   const { data, isLoading } = useQuery({
-    queryKey: [searchValue],
+    queryKey: [searchValue, filterValue, filterParam],
     queryFn: async () =>
       fetchRecipeList({
-        filter: "",
-        filterValue: "",
+        filter: filterParam,
+        filterValue: filterValue,
         search: searchValue,
       }),
   });

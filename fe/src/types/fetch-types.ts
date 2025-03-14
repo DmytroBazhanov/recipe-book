@@ -3,3 +3,7 @@ export type FetchRecipeListArgs = {
   filter: string;
   filterValue: string;
 };
+
+export type FetchRecipeArgs = {
+  id: string;
+};
