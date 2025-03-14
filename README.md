@@ -1,7 +1,6 @@
 How to upload application:
-1. Copy the link: ```https://github.com/DmytroBazhanov/recipe-book.git```
-2. In terminal use command: ```git clone https://github.com/DmytroBazhanov/recipe-book.git```
-3. In terminal use command: ```cd recipe-book```
+1. In terminal use command: ```git clone https://github.com/DmytroBazhanov/recipe-book.git```
+2. In terminal use command: ```cd recipe-book```
 
 To run application:
 1. In terminal use command: ```cd be && npm install && cd ../fe && npm i```
